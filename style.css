@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#parent{
+height: 100vh;
+display: grid;
+grid-template-rows:repeat(13,1fr) ;
+background-color: black;
+overflow-x: hidden;
+position: relative;
+
+}
+.line{
+    
+    height: 10px;
+    background-color: rgb(42, 42, 42);
+
+}
+/******************************************************************child 1****************************************************************/
+#garde{
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.656)10%,rgba(0, 0, 0, 0)40%,rgba(0, 0, 0, 0.388)100% );
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    /* background-color: black; */
+}
+#child1{    
+    
+    height: 700px;
+/* background-color: bisque; */
+display: grid;
+grid-template-rows: 15% 85%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background:url(netflix_bg.jpg);
+background-size:cover;
+}
+/****************Header**********/
+#header{
+    /* background-color: black; */
+    display:grid;
+    grid-template-columns: 25% 47% 28%;
+}
+#headerC1{
+/* background-color: yellow; */
+}
+#logo
+{
+background: url(netflix.1024x275.png); 
+background-size:cover;
+    margin-top: 25px;
+    margin-left:140px;
+    height: 60px;
+    width: 230px;
+}
+#lang{
+    height: 35px;
+    width: 110px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin:35px 0 0 60px;
+    opacity: 0.7;
+    
+    
+    
+}
+#icon{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 4px;
+    padding-left: 10px;
+    color: white;
+    
+}
+#sec1{
+    position: relative;
+    border: none;
+    height: 25px;
+    width: 70px;
+    text-align: start;
+    margin-top: 3px;
+    color: white;
+    background-color:black;
+    border: none;
+}
+#signin{
+    margin-top: 35px;
+    margin-left: 15px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top:5px ;
+    cursor: pointer;
+}
+#signin:hover{
+    opacity: 0.8;
+}
+
+
+#headerC2{
+    /* background-color: rgb(0, 255, 60); */
+    }
+    #headerC3{
+        /* background-color: rgb(0, 0, 0); */
+        display: flex;
+        }
+
+
+
+
+        
+/****************Middle**********/
+#middlesec{
+    /* background-color:blueviolet; */
+}
+.m{
+text-align: center;
+}
+#midchild1{
+    color: white;
+    font-size: 30px;
+    margin-top:180px ;
+}
+#midchild2{
+    color: white;
+    font-size: 30px;
+    margin-top:20px ;
+}
+#midchild3{
+    color: white;
+    font-size: 24px;
+    margin-top:20px ;
+}
+#midchild4{
+display: flex;
+    margin-top:20px ;
+    justify-content: center;
+}
+
+#input1{
+    height: 50px;
+    width: 400px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: rgb(30, 30, 30);
+    opacity: 0.9;
+    color: white;
+}
+#button1{
+    height: 50px;
+    width:200px;
+    margin-left: -275px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+#getready:hover{
+    opacity: 0.7;
+}
+
+#email{
+margin-right: 246px;
+
+}
+
+
+
+
+
+
+
+/******************************************************************child 2****************************************************************/
+#child2{
+    height: 550px;
+    /* background-color: rgb(255, 140, 0); */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#left{
+background-color: black;
+
+
+}
+#right{
+    background-color: crimson;
+
+}
+#l{
+
+    margin: 200px 0 0 100px;
+    color: white;
+}
+#H1{
+    font-size: 30px;
+    
+}
+#H1child{
+    width: 485px;
+    margin-right: 550px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#img1{
+height: 200px;
+width: 300px;
+
+}
+
+
+
+
+/******************************************************************child 3****************************************************************/
+#child3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 550px;
+    /* background-color: rgb(196, 255, 218); */
+    
+}
+#left1{
+    background-color: rgb(255, 0, 0);
+    }
+    #right1{
+        background-color: rgb(159, 159, 159);
+    
+    }
+
+    #r1{
+
+        padding: 185px 0 0 50px;
+        color: white;
+    }
+    #H2{
+        font-size: 30px;
+
+    }
+    #H2child{
+    padding-right: 350px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    #img2 img{
+        padding-left: 80px;
+
+    }
+
+
+
+/******************************************************************child 4****************************************************************/
+#child4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 550px;
+    /* background-color: rgb(250, 3, 254); */
+}
+#left2{
+    background-color: rgb(0, 0, 0);
+    }
+    #right2{
+        background-color: crimson;
+    
+    }
+
+    #l2{
+
+        margin: 230px 0 0 100px;
+        color: white;
+    }
+    #H2{
+        font-size: 30px;
+    }
+    #H2child{
+    
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+
+
+
+
+
+
+/******************************************************************child 5****************************************************************/
+#child5{
+    height: 550px; 
+    /* background-color: rgb(228, 13, 13); */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#left3{
+    background-color: rgb(255, 0, 0);
+    }
+    #right3{
+        background-color: rgb(60, 20, 220);
+    
+    }
+    #r3{
+
+        margin: 230px 0 0 70px;
+        color: white;
+    }
+    #H4{
+        font-size: 30px;
+    }
+    #H4child{
+        width: 300px;
+        margin-right: 500px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+
+
+
+
+
+/******************************************************************child 6****************************************************************/
+#child6{
+    height: 930px;
+    /* background-color: rgb(246, 255, 0); */
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    gap: 5px;
+}
+.porga{
+
+height: 100px;
+
+}
+
+#porga1{
+    height: 160px;
+    text-align: center;
+    align-content: end;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+.a{
+    height: 90px;
+    width: 900px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: gray;
+margin-left: 300px;
+cursor: pointer;
+padding:20px 0 0 30px;
+font-size: 40px;
+}
+.a:hover{
+    background-color: rgb(182, 178, 178);
+}
+
+pre{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+#secbar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+
+}
+
+#input2{
+height: 50px;
+    width: 400px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: rgb(30, 30, 30);
+    opacity: 0.9;
+    margin-top: 20px;
+    color: white;
+
+
+}
+#button2{
+    height: 50px;
+    width:200px;
+    margin-top: 20px;
+
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+#button2:hover{
+    opacity: 0.7;
+}
+#a1{
+    color: white;
+}
+
+
+
+
+
+/******************************************************************child 7****************************************************************/
+#child7{
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    
+}
+a{
+    color: white;
+}
+
+#last1{
+    margin:50px 0 0 200px ;
+    color: white;
+}
+
+#last2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 20px;
+text-align: start;
+margin:20px 0 0 200px;
+}
+#lang1{
+    height: 35px;
+    width: 110px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;   
+    margin:35px 0 0 198px;
+    border: 1px solid white;
+    gap: 2px;
+}
+#icon1{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    
+    color: white;
+    
+}
+#sec2{
+    position: relative;
+    border: none;
+    height: 25px;
+    width: 70px;
+    text-align: start;
+    margin-top: 6px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(0, 0, 0);
+    
+}
+#netflixIN{
+    color: white;
+    margin:20px 0 0 200px ;
+}
